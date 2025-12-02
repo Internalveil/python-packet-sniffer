@@ -7,7 +7,7 @@ It is intended for **educational and authorized security research only**.
 ⚠ LEGAL NOTICE:
 Use only on networks you own or have explicit permission to analyze.
 
-Author: InternalDevSec
+Author: Internalveil
 License: MIT
 """
 
@@ -69,3 +69,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
