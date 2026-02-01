@@ -11,7 +11,12 @@ Author: Internalveil
 License: MIT
 """
 
-from scapy.all import sniff, IP, TCP, UDP, ICMP, DNS, ARP
+try:
+    from scapy.all import sniff, IP, TCP, UDP, ICMP, DNS, ARP  # type: ignore
+except Exception:
+    import sys
+    print("Scapy is required to run this script. Install it with: pip install scapy", file=sys.stderr)
+    sys.exit(1)
 
 # =========================
 # ANSI COLOR CODES
